@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="55124acb-8987-4df1-a251-e9c2761c6b1a" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="234aef8b-9583-49c4-938c-18fed41a46bb" name="UI">
+      <childLayers>
+        <layer Id="ffaea20a-093c-4ec2-a038-b72da633fdce" name="Web">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="3cd29063-ccb2-4e9c-93c0-23e665382cbf" direction="Forward">
+              <layerMoniker Id="571e8791-3e89-4133-8b52-bfe836d028d3" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="9bbc9039-980c-447e-b1d9-92e954cbee82" name="C/S">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="8126160f-402e-40c8-9de2-2a795e46acde" direction="Forward">
+              <layerMoniker Id="571e8791-3e89-4133-8b52-bfe836d028d3" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="571e8791-3e89-4133-8b52-bfe836d028d3" name="Web Services">
+      <childLayers>
+        <layer Id="6044e625-30c2-4c9d-88f9-ea20d6a92ead" name="消息处理">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="523887cd-c9fb-4575-b897-7bd5fdecb63f" direction="Bidirectional">
+              <layerMoniker Id="69ed4cb6-96f7-4d29-9990-af0b939462df" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="d67af7e0-6b44-4a56-b4d5-4cdb77509139" direction="Forward">
+              <layerMoniker Id="096ea92d-37f2-4e7d-a6b6-faed7f455472" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="4024fb8e-46eb-4d2f-93b9-211553a61abf" name="信息查询">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="cfdb4590-a5f9-4430-b74c-6ee834e735ac" direction="Forward">
+              <layerMoniker Id="69ed4cb6-96f7-4d29-9990-af0b939462df" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="f25e7e86-b091-4c18-8b7e-538dff655067" direction="Forward">
+              <layerMoniker Id="096ea92d-37f2-4e7d-a6b6-faed7f455472" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="6589abaf-b2b4-4d7c-8915-b6019957bdcc" name="报表">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="c44bee39-7e27-4fd3-ba44-1c697b040ca5" direction="Forward">
+              <layerMoniker Id="096ea92d-37f2-4e7d-a6b6-faed7f455472" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="096ea92d-37f2-4e7d-a6b6-faed7f455472" name="DB" />
+    <layer Id="69ed4cb6-96f7-4d29-9990-af0b939462df" name="微信、QQ、微博等第三方接口" />
+  </layers>
+</layerModel>

@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="aa525fac-691f-4581-93f5-16cbb1954bc9" name="UMLUseCaseDiagram1" linkedPackageId="4f40914f-76de-4092-aa42-aeef53e07b2b" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="c120c030-ab07-4b1e-9793-e7cda2ee67cc">
+      <elementDefinition Id="3f749db9-c389-4d09-a974-bb99642c3dbd" />
+      <body>离开、下线、工作中</body>
+      <annotatedElements>
+        <useCaseMoniker Id="89c80c3a-bf4b-4bc2-8cff-8581030a1835" LastKnownName="在线状态维护" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="f92a928f-a408-4bb0-adba-a77f22cdfaf0" name="客服" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e5c04468-12f5-47e7-af87-ad1eac172b70" />
+        <targetEnds>
+          <association Id="95a9ff01-6dfe-4631-8e46-8842ce923cb5" isDerived="false" sourceEndRoleName="客服" targetEndRoleName="查客户信息" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="02d35dea-be19-4297-a55e-c8500a966df0" LastKnownName="查客户信息" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="405f8dba-e583-4dc1-a0a7-c31a4638126f" name="客服" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="33d1b033-7e55-411d-bb35-4c8a20578262" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0a32419c-6b89-481d-81c4-325f7fff5cec" name="查客户信息" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6eba9ac1-3ecd-4087-8cac-ecbe9ec05be5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6da8d13d-8e28-4407-98cf-9ec5826c4644" />
+          </association>
+          <association Id="fc33c1f8-cfc2-4f37-9914-5fab82f30ed3" isDerived="false" sourceEndRoleName="客服" targetEndRoleName="查看客户信息" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="425184c1-a8a8-4942-9ef0-b0141e2f118b" LastKnownName="查看客户消息" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b9ebdc4b-a8d4-42bb-8b9f-795c5926408d" name="客服" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="63b3b2fd-b6ee-4a9a-b7ef-5c88e101d5ab" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d8c6ad37-1e4b-4178-8d31-cf317ba5d754" name="查看客户信息" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2db8ad06-44e8-4f8f-883b-1e9d70b278eb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e3e9aaf1-bfc4-4fd5-a29e-341644eafb82" />
+          </association>
+          <association Id="b8ea8a90-6367-426d-90bc-e2ca8ff6c09b" isDerived="false" sourceEndRoleName="客服" targetEndRoleName="自动分配客服" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a72322a5-a33b-4a9b-bb23-47b3dfc6e79d" LastKnownName="自动分配客服" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c8d5359a-c291-4d12-9bde-3657af303037" name="客服" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="44e1ffba-5e6e-493d-883f-9a4379c6eb42" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="19356100-ffaf-4251-bd07-28a1baf5ead9" name="自动分配客服" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e44b51c2-3b53-4a6b-8c99-f6fb4cd07e36" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="00dc5f38-f106-4dd3-ba2c-9a3cf3202d10" />
+          </association>
+          <association Id="a9cc3377-0d3b-4772-8699-e29de9c52551" isDerived="false" sourceEndRoleName="客服" targetEndRoleName="在线状态维护" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="89c80c3a-bf4b-4bc2-8cff-8581030a1835" LastKnownName="在线状态维护" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e96b3cab-175e-4c6b-bc67-79405bf052df" name="客服" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f0129fdc-75f1-452d-b2cb-5be5d21c579b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="81e1e140-8f16-4a3e-a4f6-3bd096f2853a" name="在线状态维护" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="64cb44d0-a254-4863-8f63-c770f1375064" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ea729af6-29d0-4cc7-907e-fed51e4fa05d" />
+          </association>
+          <association Id="cdda0d26-0738-4877-8193-9756a5477608" isDerived="false" sourceEndRoleName="客服" targetEndRoleName="回复客户" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a6b8ec4e-d818-44b0-982f-3e2550898184" LastKnownName="回复客户" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="27e85c0e-6439-4324-83fe-8495a8c7abf5" name="客服" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="efe78eeb-04ce-4e43-9030-8624cea1f9ac" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="85e5460a-c33d-43de-9ce3-9a8dd3ddcdca" name="回复客户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="06fc3ca7-8e0e-4bc5-8000-c2c147fa9318" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="77bda05a-5a0e-466a-9dee-a05d50feae95" />
+          </association>
+          <association Id="30c97a14-b809-4a54-a59c-1451815e1f75" isDerived="false" sourceEndRoleName="客服" targetEndRoleName="发送问卷调查" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="436b797e-3b70-46dd-8d0c-bd29fddb5ea7" LastKnownName="发送满意度调查" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2c982c64-7304-4efb-b833-aae4e8eb61ef" name="客服" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2e005560-e88e-4f93-a902-e8dc598b43fb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4054b749-ee39-499d-a5bb-034247c89b9c" name="发送问卷调查" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0bfe5c4e-1893-40bc-b254-3417237106fa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5dc8ef68-a76e-4688-a06e-a630702a979d" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="02d35dea-be19-4297-a55e-c8500a966df0" name="查客户信息" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8b95c6a3-efd2-4228-bce4-65a449fa5d86" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="425184c1-a8a8-4942-9ef0-b0141e2f118b" name="查看客户消息" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="16d7049c-3507-4bb7-be96-c383b639b525" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a72322a5-a33b-4a9b-bb23-47b3dfc6e79d" name="自动分配客服" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e5d33e99-e6ae-4bf4-90cb-66b9873348e7" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="89c80c3a-bf4b-4bc2-8cff-8581030a1835" name="在线状态维护" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d19e106c-d4cf-42d4-8179-c56f9d5ea06e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a6b8ec4e-d818-44b0-982f-3e2550898184" name="回复客户" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ffc9fa78-7f84-4eb6-9e34-667f967df2a5" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="436b797e-3b70-46dd-8d0c-bd29fddb5ea7" name="发送满意度调查" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="548e66ab-cef9-47f0-98c4-170857ff81e5" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="4f40914f-76de-4092-aa42-aeef53e07b2b" name="ModelingProject">
+    <elementDefinition Id="3e53533a-73c8-439f-84b9-12824830c518" />
+    <profileInstances>
+      <packageHasProfileInstances Id="8c80bf00-df74-48e7-a6c2-1b14886b134c">
+        <profileInstance Id="6bfa56e2-bbba-4acf-99c6-0e93bef38d7a" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="a4585e93-9a86-4dbb-8d94-2148ca16606d">
+        <profileInstance Id="a5a344b8-f87f-4c3d-91d5-81a3d30c357a" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

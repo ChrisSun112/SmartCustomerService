@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="4aa4d058-770c-45e8-99a1-d73289de1681" name="Leader" linkedPackageId="231daa05-f7e7-4dbc-bcfb-8822dcd6e6f3" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="e44d1103-de21-4ea2-85d6-8a8343854160">
+      <profileInstance Id="3800dc4b-cf0e-473c-b856-738c469cfe7b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="7f2e5e1d-e388-4e5c-909f-790baadf6e0b">
+      <profileInstance Id="70dc4865-7a45-44d8-97e2-1ff07be6f285" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="d875250d-3ed1-4f7c-b5f3-7bdb5f876e91" name="leader" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b40cddb4-8795-4b60-a42c-d17a014fc907" />
+        <targetEnds>
+          <association Id="c30e5a6f-0058-4a6a-87f5-33fa35ac25de" isDerived="false" sourceEndRoleName="leader" targetEndRoleName="客服人员信息维护" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1099ca0b-8468-4edf-9dbe-c481b510e3f3" LastKnownName="客服人员信息维护" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="18f63a01-792a-4435-a2c1-cc7c178b5226" name="leader" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ad04b42c-a96d-40f4-9f1c-0246d70079c0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fb21b545-7b18-4e91-8283-5b80734eb474" name="客服人员信息维护" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="84da44e7-5fda-4226-919d-a7666bcc92ee" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="83466e15-2de1-4e90-aae2-25242e3b1d2b" />
+          </association>
+          <association Id="02041154-47e0-42be-8ba9-04cf2e211950" isDerived="false" sourceEndRoleName="leader" targetEndRoleName="查询报表" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d0c6074e-ccac-4e28-a95f-bae1e45efd0c" LastKnownName="查询报表" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2c920f91-302d-40f3-9420-bb9240e82f67" name="leader" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c3fdc4dc-4d8e-4c30-acc8-bcbe35eb41a0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a583c6e8-2bb0-43a1-8b3e-79a04c69f20d" name="查询报表" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a89922e3-9f00-430d-a7be-0644cc806a63" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ebac2cef-fcdb-479a-adff-40aef5ee164c" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1099ca0b-8468-4edf-9dbe-c481b510e3f3" name="客服人员信息维护" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a9a99098-ffed-44a1-bbbb-7758c885fab2" />
+        <additions>
+          <include Id="eb112e9a-89c4-45f1-aac2-7e722cfe167c">
+            <useCaseMoniker Id="7305647d-d9b9-49d7-ba43-13f2520ceb7f" LastKnownName="添加客服人员" />
+            <elementDefinition Id="97d1019f-21a3-4ccd-8966-4dceccc072a4" />
+          </include>
+          <include Id="d1cf98ca-da3f-4f46-bf19-8fbc71fea70f">
+            <useCaseMoniker Id="5a4f4eab-4be4-4d2b-a8d7-54bd577fa0f2" LastKnownName="删除客服人员" />
+            <elementDefinition Id="f3491164-387b-4c6d-b1d8-fa0757f3d254" />
+          </include>
+          <include Id="b163ec2d-ce0e-477c-b645-dc9bf880e477">
+            <useCaseMoniker Id="e400a7e9-6fbf-4c06-8396-3005d7cbe866" LastKnownName="修改客服信息" />
+            <elementDefinition Id="a68c1a6f-ea7e-4b68-8f3e-f5d909026790" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d0c6074e-ccac-4e28-a95f-bae1e45efd0c" name="查询报表" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="98911a67-b1c2-46a8-8c99-79f32a05814f" />
+        <additions>
+          <include Id="65e7f3a1-6cbc-4399-a1ec-1dd3adae4a54">
+            <useCaseMoniker Id="ff6ae6d7-3fed-408a-92bf-8b4223eece39" LastKnownName="客服满意度报表" />
+            <elementDefinition Id="67fd4a3c-0456-446a-abe6-b7f8e97c4f6a" />
+          </include>
+          <include Id="e44b68bc-cddf-485a-bd05-bb32e5281e4d">
+            <useCaseMoniker Id="7edd42f2-7f31-4596-afe0-8c9035385719" LastKnownName="在线时长报表" />
+            <elementDefinition Id="8097c148-95c3-4c88-bba9-2d578d76e45a" />
+          </include>
+          <include Id="fb5ab2d9-47bb-4309-9d5f-3b4be841a3dc">
+            <useCaseMoniker Id="70eafa78-58cb-49af-810a-b35427dcab16" LastKnownName="用户数报表" />
+            <elementDefinition Id="f2ee06ec-02cd-427b-87b0-4098b3addcbe" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7305647d-d9b9-49d7-ba43-13f2520ceb7f" name="添加客服人员" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f3c3575d-7630-460c-9121-95ed917e8de9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5a4f4eab-4be4-4d2b-a8d7-54bd577fa0f2" name="删除客服人员" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d1d214c2-4d2e-40bd-aee1-c16f7b2bbf2e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e400a7e9-6fbf-4c06-8396-3005d7cbe866" name="修改客服信息" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6c640423-1749-4a2f-969e-23a0d64b7edb" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ff6ae6d7-3fed-408a-92bf-8b4223eece39" name="客服满意度报表" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b0dfb8bc-720c-4e04-8be2-72adda7261bc" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7edd42f2-7f31-4596-afe0-8c9035385719" name="在线时长报表" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5e19fc0f-44b2-4442-b4ec-93ef0f58ce47" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="70eafa78-58cb-49af-810a-b35427dcab16" name="用户数报表" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ad6cb547-b151-4dc5-9740-7ab474fb6b44" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="231daa05-f7e7-4dbc-bcfb-8822dcd6e6f3" name="ModelingProject">
+    <elementDefinition Id="3e53533a-73c8-439f-84b9-12824830c518" />
+  </package>
+</useCaseModelRoot>

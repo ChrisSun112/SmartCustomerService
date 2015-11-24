@@ -22,16 +22,36 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
-    <Content Include="UMLUseCaseDiagram1.usecasediagram">
+    <Content Include="CustomerServicer.usecasediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UMLUseCaseDiagram1.usecasediagram.layout">
+    <Content Include="CustomerServicer.usecasediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>UMLUseCaseDiagram1.usecasediagram</DependentUpon>
+      <DependentUpon>CustomerServicer.usecasediagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
+    <Content Include="Leader.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Leader.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Leader.usecasediagram</DependentUpon>
+    </Content>
     <Content Include="ModelDefinition\ModelingProject.uml">
       <SubType>Content</SubType>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="LayerDiagram1.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="LayerDiagram1.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>LayerDiagram1.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="LayerDiagram1.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>LayerDiagram1.layerdiagram</DependentUpon>
+    </Validate>
   </ItemGroup>
 </Project>
