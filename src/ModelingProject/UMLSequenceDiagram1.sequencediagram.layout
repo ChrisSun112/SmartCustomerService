@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sequenceDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLSequenceDiagram1">
+  <SequenceDesignerModelMoniker Id="42b8b3c8-e270-4508-9903-bfe3dce1c185" />
+  <nestedChildShapes>
+    <lifelineShape Id="d5bc2cbd-182e-4612-ae24-b40d2f8504de" absoluteBounds="3.4479165871938071, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
+      <lifelineMoniker Id="3668fa41-e5f6-4db4-a41f-4e5fcd5ee22f" LastKnownName="支付宝电子面单推送job" />
+      <relativeChildShapes>
+        <umlLifelineHeadShape Id="dbcb5606-19c8-4e4f-9ee9-0e441e1aa96a" absoluteBounds="2.6522915871938073, 0.6, 1.74125, 0.4" customColor="White" visualStyleMode="Modified">
+          <lifelineMoniker Id="3668fa41-e5f6-4db4-a41f-4e5fcd5ee22f" LastKnownName="支付宝电子面单推送job" />
+          <relativeChildShapes />
+        </umlLifelineHeadShape>
+        <lifelineHoverShape Id="223b9965-dab7-444c-aab3-5c20e26c2b09" absoluteBounds="3.4479165871938071, 1, 0, 7">
+          <lifelineMoniker Id="3668fa41-e5f6-4db4-a41f-4e5fcd5ee22f" LastKnownName="支付宝电子面单推送job" />
+        </lifelineHoverShape>
+      </relativeChildShapes>
+    </lifelineShape>
+    <lifelineShape Id="b08e21d5-697d-433e-bb0f-92ed089f9f03" absoluteBounds="6.03124984105428, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
+      <lifelineMoniker Id="467dbd44-72db-42ef-8456-04887e2e1d77" LastKnownName="电子面单Redis" />
+      <relativeChildShapes>
+        <umlLifelineHeadShape Id="a073ec20-5022-47c1-9c3f-452e2e976bc0" absoluteBounds="5.506458174387614, 0.6, 1.1995833333333335, 0.4" customColor="White" visualStyleMode="Modified">
+          <lifelineMoniker Id="467dbd44-72db-42ef-8456-04887e2e1d77" LastKnownName="电子面单Redis" />
+          <relativeChildShapes />
+        </umlLifelineHeadShape>
+        <lifelineHoverShape Id="f8baec76-d967-4cd6-9b99-329e5c37a0be" absoluteBounds="6.03124984105428, 1, 0, 7">
+          <lifelineMoniker Id="467dbd44-72db-42ef-8456-04887e2e1d77" LastKnownName="电子面单Redis" />
+        </lifelineHoverShape>
+        <umlExecutionSpecificationShape Id="31e28309-8413-424d-b4e1-433b94605c75" absoluteBounds="6.03124984105428, 2.4479166666666665, 0.15, 0.55" customColor="184, 204, 215" visualStyleMode="Modified">
+          <behaviorExecutionSpecificationMoniker Id="052433d5-c237-419c-a17b-cb330fea9d83" LastKnownName="BehaviorExecutionSpecification1" />
+        </umlExecutionSpecificationShape>
+      </relativeChildShapes>
+    </lifelineShape>
+    <commentShape Id="16a49cfd-3a9b-4aa8-be98-895b35fd79db" absoluteBounds="7.25, 0.875, 2.125, 0.75" customColor="251, 247, 200">
+      <commentMoniker Id="889c5bf9-76d0-4468-aa4f-5f9ab3ee5cbc" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentConnector edgePoints="[(7.25 : 1.3125); (6.18124984105428 : 1.3125)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="217d6bd0-42ed-4e7f-ad2b-af3ef5142428" customColor="Black">
+      <relativeChildShapes />
+      <nodes>
+        <commentShapeMoniker Id="16a49cfd-3a9b-4aa8-be98-895b35fd79db" />
+        <lifelineShapeMoniker Id="b08e21d5-697d-433e-bb0f-92ed089f9f03" />
+      </nodes>
+    </commentConnector>
+    <syncMessageConnector edgePoints="[(3.52291658719381 : 2.44791666666667); (6.03124984105428 : 2.44791666666667)]" fixedFrom="Caller" fixedTo="Caller" TargetRelationshipDomainClassId="e24617ce-6c7e-4c7d-802a-63014f02e313" customColor="Black" visible="true" visualStyleMode="Modified" messageId="00000000-0000-0000-0000-000000000000">
+      <relativeChildShapes />
+      <nodes>
+        <lifelineShapeMoniker Id="d5bc2cbd-182e-4612-ae24-b40d2f8504de" />
+        <umlExecutionSpecificationShapeMoniker Id="31e28309-8413-424d-b4e1-433b94605c75" />
+      </nodes>
+    </syncMessageConnector>
+    <returnMessageConnector edgePoints="[(6.03124984105428 : 2.99791666666667); (3.52291658719381 : 2.99791666666667)]" fixedFrom="Caller" fixedTo="Caller" TargetRelationshipDomainClassId="e24617ce-6c7e-4c7d-802a-63014f02e313" customColor="Black" visible="true" visualStyleMode="Modified" messageId="00000000-0000-0000-0000-000000000000">
+      <relativeChildShapes />
+      <nodes>
+        <umlExecutionSpecificationShapeMoniker Id="31e28309-8413-424d-b4e1-433b94605c75" />
+        <lifelineShapeMoniker Id="d5bc2cbd-182e-4612-ae24-b40d2f8504de" />
+      </nodes>
+    </returnMessageConnector>
+    <lifelineShape Id="35660b96-4823-4958-ba74-9f9b73e3f7ae" absoluteBounds="1.5416666666666665, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
+      <lifelineMoniker Id="4db8dc6b-83f6-4617-bd74-8f4c0404ca76" LastKnownName="支付宝接口" />
+      <relativeChildShapes>
+        <umlLifelineHeadShape Id="78b32216-5c95-4be7-be83-c0687cc49621" absoluteBounds="1.1106249999999998, 0.6, 1.0120833333333335, 0.4" customColor="White" visualStyleMode="Modified">
+          <lifelineMoniker Id="4db8dc6b-83f6-4617-bd74-8f4c0404ca76" LastKnownName="支付宝接口" />
+          <relativeChildShapes />
+        </umlLifelineHeadShape>
+        <lifelineHoverShape Id="de48ab3b-02f4-4a41-8ddf-25f0a1a48725" absoluteBounds="1.5416666666666665, 1, 0, 7">
+          <lifelineMoniker Id="4db8dc6b-83f6-4617-bd74-8f4c0404ca76" LastKnownName="支付宝接口" />
+        </lifelineHoverShape>
+        <umlExecutionSpecificationShape Id="ae2d597f-3f9a-4046-a3c9-a5860b60996d" absoluteBounds="1.5416666666666665, 3.9229166666666662, 0.15, 0.55000000000000027" customColor="184, 204, 215" visualStyleMode="Modified">
+          <behaviorExecutionSpecificationMoniker Id="ec795705-6385-4990-9bef-3ea1841244c7" LastKnownName="BehaviorExecutionSpecification6" />
+        </umlExecutionSpecificationShape>
+      </relativeChildShapes>
+    </lifelineShape>
+    <commentShape Id="16cb991a-64a6-452a-ab96-3dae3c9f33a8" absoluteBounds="7.25, 2.5, 1.25, 0.375" customColor="251, 247, 200">
+      <commentMoniker Id="c7af4c79-5e60-4eb0-ba3d-bf7f5e8b5c28" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentConnector edgePoints="[(7.25 : 2.6875); (6.18124984105428 : 2.6875)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="217d6bd0-42ed-4e7f-ad2b-af3ef5142428" customColor="Black">
+      <relativeChildShapes />
+      <nodes>
+        <commentShapeMoniker Id="16cb991a-64a6-452a-ab96-3dae3c9f33a8" />
+        <umlExecutionSpecificationShapeMoniker Id="31e28309-8413-424d-b4e1-433b94605c75" />
+      </nodes>
+    </commentConnector>
+    <asyncMessageConnector edgePoints="[(3.52291658719381 : 3.92291666666667); (1.69166666666667 : 3.92291666666667)]" fixedFrom="Caller" fixedTo="Caller" TargetRelationshipDomainClassId="e24617ce-6c7e-4c7d-802a-63014f02e313" customColor="Black" visible="true" visualStyleMode="Modified" messageId="00000000-0000-0000-0000-000000000000">
+      <relativeChildShapes />
+      <nodes>
+        <lifelineShapeMoniker Id="d5bc2cbd-182e-4612-ae24-b40d2f8504de" />
+        <umlExecutionSpecificationShapeMoniker Id="ae2d597f-3f9a-4046-a3c9-a5860b60996d" />
+      </nodes>
+    </asyncMessageConnector>
+  </nestedChildShapes>
+</sequenceDesignerDiagram>

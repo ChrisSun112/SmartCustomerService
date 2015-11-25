@@ -101,7 +101,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tools\SmartCustomerService.ResponseWebAPI\SmartCustomerService.ResponseWebAPI.csproj">
+    <ProjectReference Include="..\SmartCustomerService.ResponseWebAPI\SmartCustomerService.ResponseWebAPI.csproj">
       <Project>{60BCC5A7-EF86-43B8-9F12-68FD6AE5B260}</Project>
       <Name>SmartCustomerService.ResponseWebAPI</Name>
     </ProjectReference>
