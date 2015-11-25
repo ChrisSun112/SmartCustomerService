@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="42b8b3c8-e270-4508-9903-bfe3dce1c185" name="Sequence1" linkedPackageId="45941396-5ea7-43cc-b6df-afa4d288a82f" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="0325e872-dc4e-49ca-906b-46b762bc2d65">
+      <profileInstance Id="686cdaa6-1514-48d0-a3e2-1d6446365fff" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="2d170843-52fd-4545-b613-23ba72be234c">
+      <profileInstance Id="78177f11-e444-475b-bfc5-90cf9aad7fc6" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="22f93264-6067-411f-a908-b1bbdf4c2b78" name="Sequence1" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <ownedCommentsInternal>
+          <comment Id="889c5bf9-76d0-4468-aa4f-5f9ab3ee5cbc">
+            <elementDefinition Id="4a5e2af2-8601-4c76-ba07-262f5e26d03a" />
+            <body>电子面单项目组将揽收、派前运单数据存入Redis</body>
+            <annotatedElements>
+              <lifelineMoniker Id="467dbd44-72db-42ef-8456-04887e2e1d77" LastKnownName="电子面单Redis" />
+            </annotatedElements>
+          </comment>
+          <comment Id="c7af4c79-5e60-4eb0-ba3d-bf7f5e8b5c28">
+            <elementDefinition Id="4ff21f21-5509-4cd4-be83-5f31f12b1cce" />
+            <body>一次取500条数据</body>
+            <annotatedElements>
+              <behaviorExecutionSpecificationMoniker Id="052433d5-c237-419c-a17b-cb330fea9d83" LastKnownName="BehaviorExecutionSpecification1" />
+            </annotatedElements>
+          </comment>
+        </ownedCommentsInternal>
+        <elementDefinition Id="02fa61e7-aba1-4ec2-ab94-dd6a1a23bb68" />
+        <fragments>
+          <behaviorExecutionSpecification Id="052433d5-c237-419c-a17b-cb330fea9d83" name="BehaviorExecutionSpecification1">
+            <elementDefinition Id="ab347387-6e22-4ac4-8b85-354aad1ea14f" />
+            <coveredLifelines>
+              <lifelineMoniker Id="467dbd44-72db-42ef-8456-04887e2e1d77" LastKnownName="电子面单Redis" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="092e9339-a84f-4aac-ac3c-386d1eb050c9" LastKnownName="ExecutionOccurrenceSpecification2" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="10281c95-f431-4299-8077-3f37176e782d" LastKnownName="ExecutionOccurrenceSpecification1" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="c824c297-93cc-4a7c-b59b-62912c0bb236" LastKnownName="MessageOccurrenceSpecification2" />
+              <messageOccurrenceSpecificationMoniker Id="0787348d-0780-4cb7-92bb-4d7f7e16a81e" LastKnownName="MessageOccurrenceSpecification3" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="10281c95-f431-4299-8077-3f37176e782d" name="ExecutionOccurrenceSpecification1">
+            <elementDefinition Id="32a2b5e9-86c3-4aa6-9b17-d71f8f92c044" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="333e1a21-c63e-4c43-866e-9e670163cb8a" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="467dbd44-72db-42ef-8456-04887e2e1d77" LastKnownName="电子面单Redis" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="590ffd60-2e52-4617-a073-13f4e2a5c565" name="MessageOccurrenceSpecification1">
+            <elementDefinition Id="e668f5ff-fbd1-490c-9e6a-97690e3963d7" />
+            <covered>
+              <lifelineMoniker Id="3668fa41-e5f6-4db4-a41f-4e5fcd5ee22f" LastKnownName="支付宝电子面单推送job" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="c824c297-93cc-4a7c-b59b-62912c0bb236" name="MessageOccurrenceSpecification2">
+            <elementDefinition Id="d9bf7484-fbb7-4db6-a75f-5b059eb83488" />
+            <covered>
+              <lifelineMoniker Id="467dbd44-72db-42ef-8456-04887e2e1d77" LastKnownName="电子面单Redis" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="0787348d-0780-4cb7-92bb-4d7f7e16a81e" name="MessageOccurrenceSpecification3">
+            <elementDefinition Id="e7fc6103-1a29-44ba-9e05-f77feaf92f71" />
+            <covered>
+              <lifelineMoniker Id="467dbd44-72db-42ef-8456-04887e2e1d77" LastKnownName="电子面单Redis" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="5e4e50f9-7f10-418d-adb5-9e5365ff3f0c" name="MessageOccurrenceSpecification4">
+            <elementDefinition Id="300ca6dd-0863-480e-98d2-f02da8556d42" />
+            <covered>
+              <lifelineMoniker Id="3668fa41-e5f6-4db4-a41f-4e5fcd5ee22f" LastKnownName="支付宝电子面单推送job" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="092e9339-a84f-4aac-ac3c-386d1eb050c9" name="ExecutionOccurrenceSpecification2">
+            <elementDefinition Id="c576d1f6-5b04-4155-8b6e-34a43c50bd8e" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="d66e4f76-ff8c-4303-8ae3-ccad79912c53" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="467dbd44-72db-42ef-8456-04887e2e1d77" LastKnownName="电子面单Redis" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="ec795705-6385-4990-9bef-3ea1841244c7" name="BehaviorExecutionSpecification6">
+            <elementDefinition Id="84613026-da1d-4970-91e4-7f46a58006e0" />
+            <coveredLifelines>
+              <lifelineMoniker Id="4db8dc6b-83f6-4617-bd74-8f4c0404ca76" LastKnownName="支付宝接口" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="f4a0557a-d8e7-4acd-90ae-de6dff36e30e" LastKnownName="ExecutionOccurrenceSpecification12" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="fee333c3-d126-4486-8895-48e18ab04a99" LastKnownName="ExecutionOccurrenceSpecification11" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="d3e0c063-499a-426a-aa79-2e64d6ff4ef5" LastKnownName="MessageOccurrenceSpecification14" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="fee333c3-d126-4486-8895-48e18ab04a99" name="ExecutionOccurrenceSpecification11">
+            <elementDefinition Id="334c8159-c4f7-44e2-92b2-4f7b7266fc7f" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="cbb1ec87-5a7d-46dc-9f75-0641276f083e" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="4db8dc6b-83f6-4617-bd74-8f4c0404ca76" LastKnownName="支付宝接口" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="719a843b-f65e-4709-beac-9ba2dd5aba12" name="MessageOccurrenceSpecification13">
+            <elementDefinition Id="31723ea9-6a88-4fb3-a63b-1953067a0c95" />
+            <covered>
+              <lifelineMoniker Id="3668fa41-e5f6-4db4-a41f-4e5fcd5ee22f" LastKnownName="支付宝电子面单推送job" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="d3e0c063-499a-426a-aa79-2e64d6ff4ef5" name="MessageOccurrenceSpecification14">
+            <elementDefinition Id="e71d340e-3cf5-44a4-846a-204445170ac0" />
+            <covered>
+              <lifelineMoniker Id="4db8dc6b-83f6-4617-bd74-8f4c0404ca76" LastKnownName="支付宝接口" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="f4a0557a-d8e7-4acd-90ae-de6dff36e30e" name="ExecutionOccurrenceSpecification12">
+            <elementDefinition Id="fa76ff1a-cfcb-4c1a-ba0e-84e8acad7b0e" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="a8763b7a-7cac-4331-838f-18f67256c382" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="4db8dc6b-83f6-4617-bd74-8f4c0404ca76" LastKnownName="支付宝接口" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline Id="4db8dc6b-83f6-4617-bd74-8f4c0404ca76" name="支付宝接口" isActor="false" lifelineDisplayName="‎支付宝接口‎">
+            <elementDefinition Id="a9b3f5f7-dd22-49a3-8ac1-70e2bc3433da" />
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="fee333c3-d126-4486-8895-48e18ab04a99" LastKnownName="ExecutionOccurrenceSpecification11" />
+              <executionOccurrenceSpecificationMoniker Id="f4a0557a-d8e7-4acd-90ae-de6dff36e30e" LastKnownName="ExecutionOccurrenceSpecification12" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="3668fa41-e5f6-4db4-a41f-4e5fcd5ee22f" name="支付宝电子面单推送job" isActor="false" lifelineDisplayName="‎支付宝电子面单推送job‎">
+            <elementDefinition Id="3282a0ac-57e3-403b-9144-6fdf3df26268" />
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="590ffd60-2e52-4617-a073-13f4e2a5c565" LastKnownName="MessageOccurrenceSpecification1" />
+              <messageOccurrenceSpecificationMoniker Id="5e4e50f9-7f10-418d-adb5-9e5365ff3f0c" LastKnownName="MessageOccurrenceSpecification4" />
+              <messageOccurrenceSpecificationMoniker Id="719a843b-f65e-4709-beac-9ba2dd5aba12" LastKnownName="MessageOccurrenceSpecification13" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="467dbd44-72db-42ef-8456-04887e2e1d77" name="电子面单Redis" isActor="false" lifelineDisplayName="‎电子面单Redis‎">
+            <elementDefinition Id="2ba645fc-6ac5-4e82-aceb-31e62665c93d" />
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="10281c95-f431-4299-8077-3f37176e782d" LastKnownName="ExecutionOccurrenceSpecification1" />
+              <executionOccurrenceSpecificationMoniker Id="092e9339-a84f-4aac-ac3c-386d1eb050c9" LastKnownName="ExecutionOccurrenceSpecification2" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message Id="8925cdeb-8dfa-4171-8b2e-8b6f96fca5bc" name="取运单数据" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+            <elementDefinition Id="4bf707b7-c8d9-4c8d-ae1f-51e3ca45e6ba" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="590ffd60-2e52-4617-a073-13f4e2a5c565" LastKnownName="MessageOccurrenceSpecification1" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="c824c297-93cc-4a7c-b59b-62912c0bb236" LastKnownName="MessageOccurrenceSpecification2" />
+            </receiveEvent>
+          </message>
+          <message Id="60b066fc-6999-452f-ac26-a50c97146169" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="a2fbb095-c9ea-44c0-8d20-e2d14c854556" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="0787348d-0780-4cb7-92bb-4d7f7e16a81e" LastKnownName="MessageOccurrenceSpecification3" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="5e4e50f9-7f10-418d-adb5-9e5365ff3f0c" LastKnownName="MessageOccurrenceSpecification4" />
+            </receiveEvent>
+          </message>
+          <message Id="f2ca2443-8cf7-4242-af28-e5035d19767e" name="发送运单状态" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="63d0d4bf-7df4-4801-8464-72af12244678" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="719a843b-f65e-4709-beac-9ba2dd5aba12" LastKnownName="MessageOccurrenceSpecification13" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="d3e0c063-499a-426a-aa79-2e64d6ff4ef5" LastKnownName="MessageOccurrenceSpecification14" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="333e1a21-c63e-4c43-866e-9e670163cb8a" name="ExecutionEvent">
+        <elementDefinition Id="6774b37a-6359-4c0e-978c-bcce1e894541" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="d66e4f76-ff8c-4303-8ae3-ccad79912c53" name="ExecutionEvent">
+        <elementDefinition Id="cb84ff30-5a70-422d-b16a-84c4220d845d" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="cbb1ec87-5a7d-46dc-9f75-0641276f083e" name="ExecutionEvent">
+        <elementDefinition Id="517698e4-58d9-4975-a063-ac57f46a006f" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="a8763b7a-7cac-4331-838f-18f67256c382" name="ExecutionEvent">
+        <elementDefinition Id="73b3c824-dac4-4a4b-a24e-9a66394b04ee" />
+      </executionEvent>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="45941396-5ea7-43cc-b6df-afa4d288a82f" name="ModelingProject">
+    <elementDefinition Id="3e53533a-73c8-439f-84b9-12824830c518" />
+  </package>
+</SequenceDesignerModel>

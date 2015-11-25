@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="aa525fac-691f-4581-93f5-16cbb1954bc9" name="UMLUseCaseDiagram1" linkedPackageId="4f40914f-76de-4092-aa42-aeef53e07b2b" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="aa525fac-691f-4581-93f5-16cbb1954bc9" name="UMLUseCaseDiagram1" linkedPackageId="4f40914f-76de-4092-aa42-aeef53e07b2b" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <ownedCommentsInternal>
     <comment Id="c120c030-ab07-4b1e-9793-e7cda2ee67cc">
       <elementDefinition Id="3f749db9-c389-4d09-a974-bb99642c3dbd" />
@@ -78,22 +78,6 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="ea729af6-29d0-4cc7-907e-fed51e4fa05d" />
           </association>
-          <association Id="cdda0d26-0738-4877-8193-9756a5477608" isDerived="false" sourceEndRoleName="客服" targetEndRoleName="回复客户" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="a6b8ec4e-d818-44b0-982f-3e2550898184" LastKnownName="回复客户" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="27e85c0e-6439-4324-83fe-8495a8c7abf5" name="客服" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="efe78eeb-04ce-4e43-9030-8624cea1f9ac" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="85e5460a-c33d-43de-9ce3-9a8dd3ddcdca" name="回复客户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="06fc3ca7-8e0e-4bc5-8000-c2c147fa9318" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="77bda05a-5a0e-466a-9dee-a05d50feae95" />
-          </association>
           <association Id="30c97a14-b809-4a54-a59c-1451815e1f75" isDerived="false" sourceEndRoleName="客服" targetEndRoleName="发送问卷调查" isLeaf="false" isAbstract="false">
             <useCaseMoniker Id="436b797e-3b70-46dd-8d0c-bd29fddb5ea7" LastKnownName="发送满意度调查" />
             <relationshipOwnedElementsInternal>
@@ -109,6 +93,22 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="5dc8ef68-a76e-4688-a06e-a630702a979d" />
+          </association>
+          <association Id="25c43200-3b46-488c-8df7-3173893d8a2d" isDerived="false" sourceEndRoleName="客服" targetEndRoleName="回复客户" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a6b8ec4e-d818-44b0-982f-3e2550898184" LastKnownName="回复客户" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="71a76a9b-cd03-42ad-a38c-8773446b3def" name="客服" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3d51c5d3-7e39-470a-8d20-47bd37947567" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d25d0750-8026-4915-88f1-b1d122cf7414" name="回复客户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f6230cdc-8a34-40e9-b13c-36bef107eb05" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="93680c6e-8018-4193-aab5-1e1f1adfe334" />
           </association>
         </targetEnds>
       </actor>

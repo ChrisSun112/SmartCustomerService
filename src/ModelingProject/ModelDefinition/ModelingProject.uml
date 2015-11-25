@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="3e53533a-73c8-439f-84b9-12824830c518"
   name="ModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -194,45 +194,6 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="77bda05a-5a0e-466a-9dee-a05d50feae95"
-            isDerived="false"
-            sourceEndRoleName="客服"
-            targetEndRoleName="回复客户"
-            isLeaf="false"
-            isAbstract="false">
-            <useCaseMoniker
-              Id="ffc9fa78-7f84-4eb6-9e34-667f967df2a5"
-              LastKnownName="回复客户"
-              LastKnownLocation="ModelingProject.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="efe78eeb-04ce-4e43-9030-8624cea1f9ac"
-                  name="客服"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="06fc3ca7-8e0e-4bc5-8000-c2c147fa9318"
-                  name="回复客户"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
             Id="5dc8ef68-a76e-4688-a06e-a630702a979d"
             isDerived="false"
             sourceEndRoleName="客服"
@@ -261,6 +222,45 @@
                 <memberEnd
                   Id="0bfe5c4e-1893-40bc-b254-3417237106fa"
                   name="发送问卷调查"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="93680c6e-8018-4193-aab5-1e1f1adfe334"
+            isDerived="false"
+            sourceEndRoleName="客服"
+            targetEndRoleName="回复客户"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ffc9fa78-7f84-4eb6-9e34-667f967df2a5"
+              LastKnownName="回复客户"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3d51c5d3-7e39-470a-8d20-47bd37947567"
+                  name="客服"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f6230cdc-8a34-40e9-b13c-36bef107eb05"
+                  name="回复客户"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -734,6 +734,366 @@
         name="用户数报表"
         isAbstract="false"
         isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="02fa61e7-aba1-4ec2-ab94-dd6a1a23bb68"
+        name="Sequence1"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="4a5e2af2-8601-4c76-ba07-262f5e26d03a">
+            <body>电子面单项目组将揽收、派前运单数据存入Redis</body>
+            <annotatedElements>
+              <lifelineMoniker
+                Id="2ba645fc-6ac5-4e82-aceb-31e62665c93d"
+                LastKnownName="电子面单Redis"
+                LastKnownLocation="ModelingProject.uml" />
+            </annotatedElements>
+          </comment>
+          <comment
+            Id="4ff21f21-5509-4cd4-be83-5f31f12b1cce">
+            <body>一次取500条数据</body>
+            <annotatedElements>
+              <behaviorExecutionSpecificationMoniker
+                Id="ab347387-6e22-4ac4-8b85-354aad1ea14f"
+                LastKnownName="BehaviorExecutionSpecification1"
+                LastKnownLocation="ModelingProject.uml" />
+            </annotatedElements>
+          </comment>
+        </ownedCommentsInternal>
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="ab347387-6e22-4ac4-8b85-354aad1ea14f"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="2ba645fc-6ac5-4e82-aceb-31e62665c93d"
+                LastKnownName="电子面单Redis"
+                LastKnownLocation="ModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="c576d1f6-5b04-4155-8b6e-34a43c50bd8e"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="ModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="32a2b5e9-86c3-4aa6-9b17-d71f8f92c044"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="ModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="d9bf7484-fbb7-4db6-a75f-5b059eb83488"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="e7fc6103-1a29-44ba-9e05-f77feaf92f71"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="ModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="32a2b5e9-86c3-4aa6-9b17-d71f8f92c044"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="6774b37a-6359-4c0e-978c-bcce1e894541"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="2ba645fc-6ac5-4e82-aceb-31e62665c93d"
+                LastKnownName="电子面单Redis"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e668f5ff-fbd1-490c-9e6a-97690e3963d7"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="3282a0ac-57e3-403b-9144-6fdf3df26268"
+                LastKnownName="支付宝电子面单推送job"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d9bf7484-fbb7-4db6-a75f-5b059eb83488"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="2ba645fc-6ac5-4e82-aceb-31e62665c93d"
+                LastKnownName="电子面单Redis"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e7fc6103-1a29-44ba-9e05-f77feaf92f71"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="2ba645fc-6ac5-4e82-aceb-31e62665c93d"
+                LastKnownName="电子面单Redis"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="300ca6dd-0863-480e-98d2-f02da8556d42"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="3282a0ac-57e3-403b-9144-6fdf3df26268"
+                LastKnownName="支付宝电子面单推送job"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="c576d1f6-5b04-4155-8b6e-34a43c50bd8e"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="cb84ff30-5a70-422d-b16a-84c4220d845d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="2ba645fc-6ac5-4e82-aceb-31e62665c93d"
+                LastKnownName="电子面单Redis"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="84613026-da1d-4970-91e4-7f46a58006e0"
+            name="BehaviorExecutionSpecification6">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="a9b3f5f7-dd22-49a3-8ac1-70e2bc3433da"
+                LastKnownName="支付宝接口"
+                LastKnownLocation="ModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="fa76ff1a-cfcb-4c1a-ba0e-84e8acad7b0e"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="ModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="334c8159-c4f7-44e2-92b2-4f7b7266fc7f"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="ModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="e71d340e-3cf5-44a4-846a-204445170ac0"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="ModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="334c8159-c4f7-44e2-92b2-4f7b7266fc7f"
+            name="ExecutionOccurrenceSpecification11">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="517698e4-58d9-4975-a063-ac57f46a006f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a9b3f5f7-dd22-49a3-8ac1-70e2bc3433da"
+                LastKnownName="支付宝接口"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="31723ea9-6a88-4fb3-a63b-1953067a0c95"
+            name="MessageOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="3282a0ac-57e3-403b-9144-6fdf3df26268"
+                LastKnownName="支付宝电子面单推送job"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e71d340e-3cf5-44a4-846a-204445170ac0"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="a9b3f5f7-dd22-49a3-8ac1-70e2bc3433da"
+                LastKnownName="支付宝接口"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="fa76ff1a-cfcb-4c1a-ba0e-84e8acad7b0e"
+            name="ExecutionOccurrenceSpecification12">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="73b3c824-dac4-4a4b-a24e-9a66394b04ee"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a9b3f5f7-dd22-49a3-8ac1-70e2bc3433da"
+                LastKnownName="支付宝接口"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="a9b3f5f7-dd22-49a3-8ac1-70e2bc3433da"
+            name="支付宝接口"
+            isActor="false"
+            lifelineDisplayName="‎支付宝接口‎">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="334c8159-c4f7-44e2-92b2-4f7b7266fc7f"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="fa76ff1a-cfcb-4c1a-ba0e-84e8acad7b0e"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="ModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="3282a0ac-57e3-403b-9144-6fdf3df26268"
+            name="支付宝电子面单推送job"
+            isActor="false"
+            lifelineDisplayName="‎支付宝电子面单推送job‎">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="e668f5ff-fbd1-490c-9e6a-97690e3963d7"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="300ca6dd-0863-480e-98d2-f02da8556d42"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="31723ea9-6a88-4fb3-a63b-1953067a0c95"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="ModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="2ba645fc-6ac5-4e82-aceb-31e62665c93d"
+            name="电子面单Redis"
+            isActor="false"
+            lifelineDisplayName="‎电子面单Redis‎">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="32a2b5e9-86c3-4aa6-9b17-d71f8f92c044"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="c576d1f6-5b04-4155-8b6e-34a43c50bd8e"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="ModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="4bf707b7-c8d9-4c8d-ae1f-51e3ca45e6ba"
+            name="取运单数据"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e668f5ff-fbd1-490c-9e6a-97690e3963d7"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d9bf7484-fbb7-4db6-a75f-5b059eb83488"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="a2fbb095-c9ea-44c0-8d20-e2d14c854556"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e7fc6103-1a29-44ba-9e05-f77feaf92f71"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="300ca6dd-0863-480e-98d2-f02da8556d42"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="63d0d4bf-7df4-4801-8464-72af12244678"
+            name="发送运单状态"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="31723ea9-6a88-4fb3-a63b-1953067a0c95"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e71d340e-3cf5-44a4-846a-204445170ac0"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="6774b37a-6359-4c0e-978c-bcce1e894541"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="cb84ff30-5a70-422d-b16a-84c4220d845d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="517698e4-58d9-4975-a063-ac57f46a006f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="73b3c824-dac4-4a4b-a24e-9a66394b04ee"
+        name="ExecutionEvent" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
