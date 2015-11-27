@@ -25,7 +25,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCustomerService.Respon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCustomerService.ResponseWebAPI.Tests", "Tools\SmartCustomerService.ResponseWebAPI.Tests\SmartCustomerService.ResponseWebAPI.Tests.csproj", "{42C904F4-2826-4A0C-8FF8-6F88C0D83998}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibUnitTest", "Libraries\LibUnitTest\LibUnitTest.csproj", "{7896D8D5-4B91-4EFD-A1A7-4C9792EDF1A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCustomerService.LibUnitTest", "Libraries\LibUnitTest\SmartCustomerService.LibUnitTest.csproj", "{7896D8D5-4B91-4EFD-A1A7-4C9792EDF1A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

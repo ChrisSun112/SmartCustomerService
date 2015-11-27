@@ -6,8 +6,8 @@
     <ProjectGuid>{7896D8D5-4B91-4EFD-A1A7-4C9792EDF1A8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LibUnitTest</RootNamespace>
-    <AssemblyName>LibUnitTest</AssemblyName>
+    <RootNamespace>SmartCustomerService.LibUnitTest</RootNamespace>
+    <AssemblyName>SmartCustomerService.LibUnitTest</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
