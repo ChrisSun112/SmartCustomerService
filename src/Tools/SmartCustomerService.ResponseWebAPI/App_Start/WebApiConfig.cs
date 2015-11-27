@@ -16,7 +16,7 @@ namespace SmartCustomerService.ResponseWebAPI
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
+                routeTemplate: "ResponseWebApi/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
         }

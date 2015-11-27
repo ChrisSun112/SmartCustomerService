@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCustomerService.Respon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCustomerService.ResponseWebAPI.Tests", "Tools\SmartCustomerService.ResponseWebAPI.Tests\SmartCustomerService.ResponseWebAPI.Tests.csproj", "{42C904F4-2826-4A0C-8FF8-6F88C0D83998}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibUnitTest", "Libraries\LibUnitTest\LibUnitTest.csproj", "{7896D8D5-4B91-4EFD-A1A7-4C9792EDF1A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{42C904F4-2826-4A0C-8FF8-6F88C0D83998}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42C904F4-2826-4A0C-8FF8-6F88C0D83998}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42C904F4-2826-4A0C-8FF8-6F88C0D83998}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7896D8D5-4B91-4EFD-A1A7-4C9792EDF1A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7896D8D5-4B91-4EFD-A1A7-4C9792EDF1A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7896D8D5-4B91-4EFD-A1A7-4C9792EDF1A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7896D8D5-4B91-4EFD-A1A7-4C9792EDF1A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,5 +81,6 @@ Global
 		{7B08ECEC-43E9-474C-A6E1-FFAF7A13B823} = {63A2046B-5FFB-4981-A19F-485378C2834C}
 		{6B2A1D38-E4AA-4070-83EC-BB2FB9B65738} = {63A2046B-5FFB-4981-A19F-485378C2834C}
 		{CFBD21DC-1DC8-407F-874E-15C03E643E6F} = {63A2046B-5FFB-4981-A19F-485378C2834C}
+		{7896D8D5-4B91-4EFD-A1A7-4C9792EDF1A8} = {63A2046B-5FFB-4981-A19F-485378C2834C}
 	EndGlobalSection
 EndGlobal
