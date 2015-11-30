@@ -2,11 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using YTO.Alipay.ServiceWindow.DataBus.Core;
-using YTO.Alipay.ServiceWindow.DataBus.Model;
-using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using YTO.Framework.Core;
 using System.Web;
 
 namespace YTO.Alipay.ServiceWindow.DataBus.Process

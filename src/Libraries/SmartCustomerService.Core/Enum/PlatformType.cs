@@ -4,13 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SmartCustomerService.Process
+namespace SmartCustomerService.Core
 {
     /// <summary>
-    /// 处理器接口
+    /// 支持的平台
     /// </summary>
-    public interface IProcess
+    public enum PlatformType
     {
-        void Process(Object o);
+        wechat,
+        qq,
+        weibo,
+        alipay
     }
 }

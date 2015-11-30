@@ -13,12 +13,15 @@ namespace SmartCustomerService.ResponseWebAPI
 
             // Web API routes
             config.MapHttpAttributeRoutes();
+            
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "ResponseWebApi/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            config.Filters.Add(new NoHandleExceptionFilter());
         }
     }
 }
