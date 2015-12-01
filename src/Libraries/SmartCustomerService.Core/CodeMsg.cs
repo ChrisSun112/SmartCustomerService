@@ -11,9 +11,9 @@ namespace SmartCustomerService.Core
     /// </summary>
     public class CodeMsg
     {
-        public string Code { get; set; }
+        public string code { get; set; }
 
-        public string Msg { get; set; }
+        public string msg { get; set; }
     }
 
     /// <summary>

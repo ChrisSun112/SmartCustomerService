@@ -11,3 +11,4 @@ D:\git_work\SmartCustomerService\src\Libraries\SmartCustomerService.Core\bin\Deb
 D:\git_work\SmartCustomerService\src\Libraries\SmartCustomerService.Core\bin\Debug\Common.Logging.Core.xml
 D:\git_work\SmartCustomerService\src\Libraries\SmartCustomerService.Core\bin\Debug\Spring.Core.pdb
 D:\git_work\SmartCustomerService\src\Libraries\SmartCustomerService.Core\bin\Debug\Spring.Core.xml
+D:\git_work\SmartCustomerService\src\Libraries\SmartCustomerService.Core\obj\Debug\SmartCustomerService.Core.csprojResolveAssemblyReference.cache

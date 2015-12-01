@@ -21,7 +21,7 @@ namespace SmartCustomerService.ResponseWebAPI
                 defaults: new { id = RouteParameter.Optional }
             );
 
-            config.Filters.Add(new NoHandleExceptionFilter());
+            //config.Filters.Add(new NoHandleExceptionFilter());
         }
     }
 }
