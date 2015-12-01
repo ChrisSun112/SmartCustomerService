@@ -1,0 +1,5 @@
+D:\git_work\SmartCustomerService\src\Libraries\SmartCustomerService.BLL\bin\Debug\SmartCustomerService.BLL.dll
+D:\git_work\SmartCustomerService\src\Libraries\SmartCustomerService.BLL\bin\Debug\SmartCustomerService.BLL.pdb
+D:\git_work\SmartCustomerService\src\Libraries\SmartCustomerService.BLL\obj\Debug\SmartCustomerService.BLL.csprojResolveAssemblyReference.cache
+D:\git_work\SmartCustomerService\src\Libraries\SmartCustomerService.BLL\obj\Debug\SmartCustomerService.BLL.dll
+D:\git_work\SmartCustomerService\src\Libraries\SmartCustomerService.BLL\obj\Debug\SmartCustomerService.BLL.pdb

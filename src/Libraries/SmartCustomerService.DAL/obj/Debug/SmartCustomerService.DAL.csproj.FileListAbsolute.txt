@@ -1,0 +1,5 @@
+D:\git_work\SmartCustomerService\src\Libraries\SmartCustomerService.DAL\bin\Debug\SmartCustomerService.DAL.dll
+D:\git_work\SmartCustomerService\src\Libraries\SmartCustomerService.DAL\bin\Debug\SmartCustomerService.DAL.pdb
+D:\git_work\SmartCustomerService\src\Libraries\SmartCustomerService.DAL\obj\Debug\SmartCustomerService.DAL.csprojResolveAssemblyReference.cache
+D:\git_work\SmartCustomerService\src\Libraries\SmartCustomerService.DAL\obj\Debug\SmartCustomerService.DAL.dll
+D:\git_work\SmartCustomerService\src\Libraries\SmartCustomerService.DAL\obj\Debug\SmartCustomerService.DAL.pdb

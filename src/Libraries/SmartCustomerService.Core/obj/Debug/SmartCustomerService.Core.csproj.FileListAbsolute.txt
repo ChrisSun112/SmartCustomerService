@@ -1,0 +1,13 @@
+D:\git_work\SmartCustomerService\src\Libraries\SmartCustomerService.Core\bin\Debug\SmartCustomerService.Core.dll
+D:\git_work\SmartCustomerService\src\Libraries\SmartCustomerService.Core\bin\Debug\SmartCustomerService.Core.pdb
+D:\git_work\SmartCustomerService\src\Libraries\SmartCustomerService.Core\obj\Debug\SmartCustomerService.Core.dll
+D:\git_work\SmartCustomerService\src\Libraries\SmartCustomerService.Core\obj\Debug\SmartCustomerService.Core.pdb
+D:\git_work\SmartCustomerService\src\Libraries\SmartCustomerService.Core\bin\Debug\Common.Logging.Core.dll
+D:\git_work\SmartCustomerService\src\Libraries\SmartCustomerService.Core\bin\Debug\Common.Logging.dll
+D:\git_work\SmartCustomerService\src\Libraries\SmartCustomerService.Core\bin\Debug\Spring.Core.dll
+D:\git_work\SmartCustomerService\src\Libraries\SmartCustomerService.Core\bin\Debug\Common.Logging.pdb
+D:\git_work\SmartCustomerService\src\Libraries\SmartCustomerService.Core\bin\Debug\Common.Logging.xml
+D:\git_work\SmartCustomerService\src\Libraries\SmartCustomerService.Core\bin\Debug\Common.Logging.Core.pdb
+D:\git_work\SmartCustomerService\src\Libraries\SmartCustomerService.Core\bin\Debug\Common.Logging.Core.xml
+D:\git_work\SmartCustomerService\src\Libraries\SmartCustomerService.Core\bin\Debug\Spring.Core.pdb
+D:\git_work\SmartCustomerService\src\Libraries\SmartCustomerService.Core\bin\Debug\Spring.Core.xml
